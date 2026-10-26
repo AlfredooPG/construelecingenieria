@@ -1,0 +1,22 @@
+{
+  "name": "construelec-ingenieria-v2",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Sitio corporativo multipágina de ConstruElec Ingeniería: arquitectura, construcción, remodelaciones e instalaciones certificadas.",
+  "type": "module",
+  "engines": { "node": ">=18.18" },
+  "scripts": {
+    "build": "node build.mjs",
+    "build:watch": "node --watch-path=src --watch-path=build.mjs build.mjs",
+    "dev": "npm run build && serve dist --listen tcp://127.0.0.1:3000 --no-clipboard --no-compression",
+    "start": "npm run dev",
+    "lint": "html-validate \"dist/**/*.html\"",
+    "test": "npm run build && node --test",
+    "check": "npm run build && npm run lint && node --test"
+  },
+  "devDependencies": {
+    "html-validate": "^9.0.0",
+    "lucide": "0.469.0",
+    "serve": "^14.2.4"
+  }
+}

@@ -1,0 +1,26 @@
+# Dependencias
+node_modules/
+
+# Variables de entorno y secretos (este proyecto no los usa hoy, pero quedan excluidos)
+.env
+.env.*
+!.env.example
+
+# Registros y archivos del sistema
+npm-debug.log*
+.DS_Store
+Thumbs.db
+
+# Compilados y caché
+dist/
+.cache/
+
+# Configuración local de VS Code (se versiona solo la compartida)
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# Fotos revisadas y excluidas de la publicación (personas, capturas)
+_no-publicar/

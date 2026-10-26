@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" width="640" height="520" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <rect x="8" y="8" width="624" height="504" rx="14" fill="#fff" stroke="#e2e8f0" stroke-width="2"/>
+  <g stroke="#1e3a8a" stroke-width="3">
+    <path d="M60 420H580"/>
+    <path d="M130 420V240H450V420"/>
+    <path d="M100 240 290 120 480 240Z" fill="#eff6ff"/>
+    <path d="M390 190V140H425V212"/>
+    <rect x="260" y="320" width="60" height="100" fill="#fef3c7"/>
+    <rect x="160" y="275" width="70" height="60" fill="#eff6ff"/><path d="M195 275V335M160 305H230"/>
+    <rect x="350" y="275" width="70" height="60" fill="#eff6ff"/><path d="M385 275V335M350 305H420"/>
+  </g>
+  <g stroke="#f59e0b" stroke-width="2.5">
+    <path d="M130 462H450M130 452V472M450 452V472"/>
+    <path d="M515 240V420M505 240H525M505 420H525"/>
+    <path d="M290 100V70M280 70H300"/>
+  </g>
+  <g fill="#b45309" font-family="Inter,system-ui,sans-serif" font-weight="600" font-size="15">
+    <text x="262" y="490">12,00 m</text>
+    <text x="528" y="336" transform="rotate(90 528 336)">3,20 m</text>
+  </g>
+  <g transform="translate(468 40)">
+    <rect width="140" height="52" rx="8" fill="#f8fafc" stroke="#e2e8f0"/>
+    <text x="12" y="22" fill="#0f172a" font-family="Inter,system-ui,sans-serif" font-weight="600" font-size="11">ELEVACIÓN FRONTAL</text>
+    <text x="12" y="40" fill="#64748b" font-family="Inter,system-ui,sans-serif" font-size="11">Escala 1:50</text>
+  </g>
+  <g transform="translate(36 36)">
+    <circle cx="16" cy="16" r="16" fill="#0f172a"/>
+    <g transform="translate(4 4)" stroke="#f59e0b" stroke-width="2"><path d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"/></g>
+  </g>
+</svg>

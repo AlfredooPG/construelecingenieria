@@ -1,0 +1,18 @@
+{
+  "name": "ConstruElec Ingeniería",
+  "tagline": "Arquitectura, construcción, remodelaciones e instalaciones técnicas certificadas.",
+  "url": "https://construelecingenieria.cl",
+  "phone": "+56 9 1234 5678",
+  "phoneHref": "+56912345678",
+  "whatsapp": "56912345678",
+  "email": "contacto@construelecingenieria.cl",
+  "address": "Santiago, Chile",
+  "mapQuery": "Santiago, Chile",
+  "hours": "Lunes a viernes, 09:00 a 18:00",
+  "formEndpoint": "",
+  "social": {
+    "instagram": "",
+    "facebook": "",
+    "linkedin": ""
+  }
+}
