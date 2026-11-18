@@ -1,4 +1,4 @@
-# ConstruElec Ingeniería — sitio corporativo (v2)
+# TAMÁ — Arquitectura · Construcción · Electricidad (sitio corporativo)
 
 Sitio multipágina estático, sin framework ni CDN de CSS/JS. Un generador (`build.mjs`) ensambla las páginas a partir de componentes y datos únicos y escribe el resultado en `dist/`.
 
@@ -31,7 +31,9 @@ Publicación: sube el contenido de `dist/` a cualquier hosting estático (Netlif
 
 ## Sistema de diseño
 
-Fondo blanco/`#F8FAFC`; primario azul industrial `#0F172A` / `#1E3A8A`; acento ámbar `#F59E0B` (CTA e íconos); texto `#334155` / `#1E293B`, secundario `#64748B`; tipografía Inter (400–800); tarjetas con borde `#E2E8F0`, radio 12 px y sombra sutil; íconos Lucide incrustados como sprite SVG (solo los usados en cada página).
+Identidad tomada del logo TAMÁ (colores medidos sobre la imagen): carbón `#212225` / `#26272A`, azul celeste `#52B4E7`, limón `#E1F751`, gris `#72767E`, texto claro `#F9F9FB`. Tema mixto: cabecera, portada, bandas de llamado a la acción y footer en carbón; secciones de lectura en blanco / `#F4F5F7`, con azul oscurecido `#1F6FA8` para texto y enlaces (el celeste no alcanza contraste sobre blanco). Botón principal en limón con texto carbón. Tipografía: Montserrat (títulos y marca) + Inter (texto). Todos los tokens están en `:root` de `src/assets/css/main.css`.
+
+El logo del encabezado es una redibujo vectorial (`src/assets/img/logo-mark.svg`). Para usar el original, reemplaza ese archivo por el SVG o PNG transparente oficial.
 
 ## Carrusel de la portada
 

@@ -1,9 +1,9 @@
 // Galería REFERENCIAL: reemplazar por obras reales y fotografías propias antes de publicar.
 export const categories = [
-  { key: 'arquitectura', label: 'Arquitectura y diseño', colors: ['#1e3a8a', '#0f172a'] },
-  { key: 'obras', label: 'Obras civiles', colors: ['#334155', '#0f172a'] },
-  { key: 'remodelaciones', label: 'Remodelaciones', colors: ['#0369a1', '#0c4a6e'] },
-  { key: 'instalaciones', label: 'Instalaciones', colors: ['#b45309', '#78350f'] },
+  { key: 'arquitectura', label: 'Arquitectura y diseño', colors: ['#1f6fa8', '#212225'] },
+  { key: 'obras', label: 'Obras civiles', colors: ['#3b3e44', '#1a1b1e'] },
+  { key: 'remodelaciones', label: 'Remodelaciones', colors: ['#2f7fb3', '#1a2a38'] },
+  { key: 'instalaciones', label: 'Instalaciones', colors: ['#6f7d1a', '#1f2410'] },
 ];
 
 export const projects = [

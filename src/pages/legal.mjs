@@ -14,7 +14,7 @@ export const termsPage = {
   depth: 0,
   nav: '',
   title: 'Términos de servicio',
-  description: 'Términos y condiciones de uso del sitio web de ConstruElec Ingeniería.',
+  description: 'Términos y condiciones de uso del sitio web de TAMÁ.',
   body: (c) => `${pageHero(c, { title: 'Términos de servicio', crumb: [home, { label: 'Términos de servicio' }] })}
 ${doc([
   ['1. Aceptación', `<p>Al usar este sitio web aceptas estos términos. Si no estás de acuerdo, te pedimos no utilizarlo.</p>`],
@@ -34,7 +34,7 @@ export const privacyPage = {
   depth: 0,
   nav: '',
   title: 'Política de privacidad',
-  description: 'Cómo ConstruElec Ingeniería recopila, usa y protege los datos personales entregados a través del sitio web.',
+  description: 'Cómo TAMÁ recopila, usa y protege los datos personales entregados a través del sitio web.',
   body: (c) => `${pageHero(c, { title: 'Política de privacidad', crumb: [home, { label: 'Política de privacidad' }] })}
 ${doc([
   ['1. Responsable', `<p>${c.esc(c.site.name)} es responsable del tratamiento de los datos que entregas en este sitio. Contacto: <a href="mailto:${c.site.email}">${c.site.email}</a>.</p>`],

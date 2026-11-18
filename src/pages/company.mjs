@@ -97,7 +97,7 @@ export const contactPage = {
   depth: 0,
   nav: 'contacto',
   title: 'Contacto',
-  description: 'Contacta a ConstruElec Ingeniería por WhatsApp, teléfono o correo. Datos de ubicación, horario y mapa.',
+  description: 'Contacta a TAMÁ por WhatsApp, teléfono o correo. Datos de ubicación, horario y mapa.',
   body: (c) => {
     const s = c.site;
     return `

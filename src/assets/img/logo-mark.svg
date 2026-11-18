@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 92 80" width="92" height="80" fill="none" stroke-linejoin="miter">
+  <title>TAMÁ</title>
+  <g stroke="#52b4e7" stroke-width="3" stroke-linecap="round"><path d="M6 26H30M6 38H26M9 20V52M20 20V46"/></g>
+  <path d="M60 32V66H88Z" stroke="#72767e" stroke-width="7"/>
+  <path d="M12 68 38 27 62 68" stroke="#52b4e7" stroke-width="11"/>
+  <path d="M52 2H69L59 28H75L38 78 46 44H30Z" fill="#e1f751" stroke="#212225" stroke-width="2.5" paint-order="stroke" stroke-linejoin="round"/>
+</svg>

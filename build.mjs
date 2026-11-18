@@ -34,7 +34,7 @@ await copyDir(path.join(ROOT, 'src/assets'), path.join(DIST, 'assets'));
 // Miniaturas SVG referenciales de proyectos (sin imágenes pesadas).
 for (const p of projects) {
   const [c1, c2] = categories.find((k) => k.key === p.cat).colors;
-  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/></linearGradient><pattern id="p" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#fff" stroke-opacity=".09"/></pattern></defs><rect width="800" height="600" fill="url(#g)"/><rect width="800" height="600" fill="url(#p)"/><g transform="translate(250 150) scale(12.5)" fill="none" stroke="#fbbf24" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round">${innerSvg(await loadIcon(p.icon))}</g></svg>`;
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="${c1}"/><stop offset="1" stop-color="${c2}"/></linearGradient><pattern id="p" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#fff" stroke-opacity=".09"/></pattern></defs><rect width="800" height="600" fill="url(#g)"/><rect width="800" height="600" fill="url(#p)"/><g transform="translate(250 150) scale(12.5)" fill="none" stroke="#e1f751" stroke-width=".9" stroke-linecap="round" stroke-linejoin="round">${innerSvg(await loadIcon(p.icon))}</g></svg>`;
   await writeFile(path.join(DIST, `assets/img/proyecto-${p.slug}.svg`), svg);
 }
 
@@ -46,13 +46,13 @@ const hash = createHash('md5')
   .slice(0, 8);
 
 const FONTS =
-  'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap';
+  'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap';
 
 async function render(page) {
   const c = createCtx(site, { depth: page.depth, absolute: !!page.absolute });
   const main = page.body(c);
   const long = `${page.title} | ${site.name}`;
-  const fullTitle = page.file === 'index.html' ? page.title : long.length <= 70 ? long : `${page.title} | ConstruElec`;
+  const fullTitle = page.file === 'index.html' ? page.title : long.length <= 70 ? long : `${page.title} | TAMÁ`;
   const canonical = `${site.url}/${page.file === 'index.html' ? '' : page.file}`;
   const head = header(c, page.nav);
   const foot = footer(c);
@@ -66,13 +66,14 @@ async function render(page) {
 <title>${esc(fullTitle)}</title>
 <meta name="description" content="${esc(page.description)}">
 ${page.noindex ? '<meta name="robots" content="noindex">' : `<link rel="canonical" href="${canonical}">`}
-<meta name="theme-color" content="#0f172a">
+<meta name="theme-color" content="#212225">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CL">
 <meta property="og:site_name" content="${esc(site.name)}">
 <meta property="og:title" content="${esc(fullTitle)}">
 <meta property="og:description" content="${esc(page.description)}">
-<link rel="icon" href="${c.u('assets/img/favicon.svg')}" type="image/svg+xml">
+<link rel="icon" href="${c.u('assets/img/favicon.png')}" type="image/png">
+<link rel="apple-touch-icon" href="${c.u('assets/img/apple-touch-icon.png')}">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="${FONTS}" onload="this.onload=null;this.rel='stylesheet'">

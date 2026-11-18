@@ -2,7 +2,7 @@
   "name": "construelec-ingenieria-v2",
   "version": "2.0.0",
   "private": true,
-  "description": "Sitio corporativo multipágina de ConstruElec Ingeniería: arquitectura, construcción, remodelaciones e instalaciones certificadas.",
+  "description": "Sitio corporativo multipágina de TAMÁ: arquitectura, construcción y electricidad.",
   "type": "module",
   "engines": { "node": ">=18.18" },
   "scripts": {

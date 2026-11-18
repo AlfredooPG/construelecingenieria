@@ -1,4 +1,4 @@
-/* ConstruElec Ingeniería — interacciones (sin dependencias) */
+/* TAMÁ — interacciones (sin dependencias) */
 (() => {
   'use strict';
   const $ = (s, r = document) => r.querySelector(s);

@@ -89,3 +89,14 @@ test('el formulario tiene todos sus campos y el sitemap lista las páginas', asy
 test('el JavaScript no tiene errores de sintaxis', () => {
   execFileSync(process.execPath, ['--check', path.join(DIST, 'assets/js/main.js')]);
 });
+
+test('la marca es TAMÁ en todas las páginas y no quedan restos del nombre anterior', () => {
+  for (const [f, h] of pages) {
+    const n = path.relative(DIST, f);
+    assert.match(h, /<span class="brand-name">TAMÁ<\/span>/, `${n}: falta la marca`);
+    assert.match(h, /<title>[^<]*TAMÁ/, `${n}: el título no incluye TAMÁ`);
+    assert.match(h, /og:site_name" content="TAMÁ"/, `${n}: og:site_name`);
+    const visible = h.replace(/construelecingenieria\.cl/gi, '');
+    assert.ok(!/construelec/i.test(visible), `${n}: aparece el nombre anterior`);
+  }
+});

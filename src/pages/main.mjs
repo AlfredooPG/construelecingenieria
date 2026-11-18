@@ -20,7 +20,7 @@ export const homePage = {
   file: 'index.html',
   depth: 0,
   nav: 'inicio',
-  title: 'ConstruElec Ingeniería | Construcción, remodelación e instalaciones',
+  title: 'TAMÁ | Arquitectura, construcción y electricidad',
   description:
     'Soluciones integrales de diseño, construcción, remodelación e instalaciones certificadas SEC para proyectos residenciales, comerciales e institucionales. Solicita tu presupuesto.',
   jsonld: (c) => ({
@@ -37,12 +37,12 @@ export const homePage = {
 <section class="hero">
   <div class="container hero-inner">
     <div>
-      <p class="eyebrow">Arquitectura · Construcción · Instalaciones</p>
+      <p class="eyebrow">Arquitectura · Construcción · Electricidad</p>
       <h1>Diseñamos, construimos y <em>certificamos</em> tu proyecto</h1>
       <p class="hero-lead">Ofrecemos soluciones integrales en diseño, construcción, remodelación y gestión de proyectos, garantizando el cumplimiento normativo, la calidad técnica y la excelencia en las terminaciones para proyectos residenciales, comerciales e institucionales.</p>
       <div class="btn-row">
         <a class="btn btn-primary btn-lg" href="${c.u('presupuesto.html')}">${c.i('file-text')}Solicitar presupuesto</a>
-        <a class="btn btn-outline btn-lg" href="${c.u('servicios/index.html')}">Ver servicios${c.i('arrow-right')}</a>
+        <a class="btn btn-outline-light btn-lg" href="${c.u('servicios/index.html')}">Ver servicios${c.i('arrow-right')}</a>
       </div>
     </div>
     ${heroCarousel(c)}
@@ -127,7 +127,7 @@ export const servicePages = services.map((s) => ({
   depth: 1,
   nav: 'servicios',
   title: s.title,
-  description: `${s.intro} Solicita tu presupuesto con ConstruElec Ingeniería.`.slice(0, 200),
+  description: `${s.intro} Solicita tu presupuesto con TAMÁ.`.slice(0, 200),
   body: (c) => {
     const others = services.filter((o) => o.slug !== s.slug);
     return `

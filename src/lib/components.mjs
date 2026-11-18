@@ -15,8 +15,8 @@ const WA_GENERIC = 'Hola, quisiera solicitar información y un presupuesto.';
 
 export function brand(c) {
   return `<a class="brand" href="${c.u('index.html')}" aria-label="${c.esc(c.site.name)}, ir al inicio">
-    <span class="brand-mark">${c.i('zap')}</span>
-    <span class="brand-name">CONSTRUELEC <b>INGENIERÍA</b></span>
+    <img class="brand-logo" src="${c.u('assets/img/logo-mark.webp')}" width="88" height="52" alt="">
+    <span class="brand-text"><span class="brand-name">TAMÁ</span><span class="brand-tag">Arquitectura · Construcción · Electricidad</span></span>
   </a>`;
 }
 
